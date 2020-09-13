@@ -129,8 +129,6 @@ end
 
 local bmap = lcd.drawBitmap
 local icons = {}
-  icons.splash1 = Bitmap.open(FILE_PATH.."/gfx/splash1.bmp")
-  icons.splash2 = Bitmap.open(FILE_PATH.."/gfx/splash2.bmp")
   icons.background = Bitmap.open(FILE_PATH.."/gfx/snakehd_bg.png")
   icons.gameWindow = Bitmap.open(FILE_PATH.."/gfx/snakehd_game_window.png")
 ---------------------------------------------

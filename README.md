@@ -1,7 +1,7 @@
-## TetrisHD for TX16S/Horus/Jumper T16 - v2.0.0
+## TetrisHD for TX16S/Horus/Jumper T16 - v2.0.1
 
 ### TetrisHD
- TetrisHD for OpenTX HD controllers
+ Tetris HD for OpenTX HD controllers
 
 ## Interface
 
