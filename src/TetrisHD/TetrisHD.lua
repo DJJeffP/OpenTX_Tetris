@@ -1,5 +1,5 @@
 --------------------------------------------------------
--- TetrisHD for OpenTX V2.0.0
+-- TetrisHD for OpenTX V2.0.1
 --------------------------------------------------------
 -- Original (c)2018 by Mike Dogan (mike-vom-mars.com)
 --
@@ -90,17 +90,17 @@ local brickData  =
 	{0,1,2,0, 0,0,0,1, 2}, --  XXX
 					       --  X  
 
-	{0,1,1,2, 0,0,1,1, 3}, -- XX
-					       --  XX 
+	{0,1,1,2, 0,0,1,1, 3}, --  XX
+					       --   XX 
 
-	{1,2,0,1, 0,0,1,1, 4}, --  XX 
-					 	   -- XX   
+	{1,2,0,1, 0,0,1,1, 4}, --   XX 
+					 	   --  XX   
 
 	{0,1,0,1, 0,0,1,1, 1}, --  XX
 					  	   --  XX  
 
-	{0,1,2,1, 0,0,0,1, 2}, -- XXX
-					  	   --  X  
+	{0,1,2,1, 0,0,0,1, 2}, --  XXX
+					  	   --   X  
 	}
 
 ---------------------------------------------
@@ -122,7 +122,7 @@ local getBrickData = function(num)
 		r      = 0,							-- CURR. ROW OF BRICK ON MAP 
 		cs     = cols,						-- X-STEPS OF THE BRICK SQUARES 
 		rs     = rows,						-- Y-STEPS OF THE BRICK SQUARES 
-		rot    = brickData[num][9], 	-- PIECE NUM (1-..) TO USE AS ROTATION CENTER 
+		rot    = brickData[num][9], 		-- PIECE NUM (1-..) TO USE AS ROTATION CENTER 
 		}
 end
 
@@ -427,10 +427,6 @@ local function update(deltaTime)
 
 		bmap(icons.background, 0,  0, 100) -- draw background
 		lcd.drawText(screenW / 4 + 30, LCD_H / 2 - 20, "    TETRIS HD    ", MIDSIZE + INVERS )
-		--lcd.drawPixmap(0, 0, "/SCRIPTS/X-TRIS/gfx/splash1.bmp")
-		--bmap(icons.splash1, 0,  0, 100) -- draw splash1
-		--lcd.drawPixmap(64, 0, "/SCRIPTS/X-TRIS/gfx/splash2.bmp")
-		--bmap(icons.splash2, 64,  0, 100) -- draw splash2
 		if now - start >= 200 then
 			state = SCR_GAME
 			newGame()
