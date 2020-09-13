@@ -25,7 +25,7 @@
 * Copy the extracted content on your Sdcard to `/SCRIPTS/GAMES/`. It should look like `/SCRIPTS/GAMES/TetrisHD/`
 
 ## Play
-* Run the main.luac from `SD-HC Card` > `/SCRIPTS/GAMES/TetrisHD/main.luac`
+* Run the TetrisHD.luac from `SD-HC Card` > `/SCRIPTS/GAMES/TetrisHD/main.luac`
 * Press the RTN key to exit the game. 
 
 
