@@ -20,7 +20,7 @@
 * The OpenTX/TX16S firmware on your transmitter needs to [includes the `luac` build option]
 
 ## Install
-* download the latest release from: https://github.com/DJJeffP/TetrisHD/releases/
+* download the latest release from: https://github.com/DJJeffP/OpenTX_Tetris/releases
 * extract the zipfile.
 * Copy the extracted content on your Sdcard to `/SCRIPTS/GAMES/`. It should look like `/SCRIPTS/GAMES/TetrisHD/`
 
